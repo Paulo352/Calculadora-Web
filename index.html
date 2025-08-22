@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app" role="application" aria-label="Calculadora">
+    <div class="calc">
+      <div class="display" role="textbox" aria-live="polite" aria-atomic="true">
+        <div id="history" class="history" aria-hidden="true"></div>
+        <div id="output" class="output" tabindex="0">0</div>
+      </div>
+      <div class="keys" role="group" aria-label="Teclas da calculadora">
+        <button data-action="clear" class="key key-ac" aria-label="Limpar">AC</button>
+        <button data-action="sign" class="key">±</button>
+        <button data-action="percent" class="key">%</button>
+        <button data-op="divide" class="key key-op">÷</button>
+
+        <button data-num="7" class="key">7</button>
+        <button data-num="8" class="key">8</button>
+        <button data-num="9" class="key">9</button>
+        <button data-op="multiply" class="key key-op">×</button>
+
+        <button data-num="4" class="key">4</button>
+        <button data-num="5" class="key">5</button>
+        <button data-num="6" class="key">6</button>
+        <button data-op="subtract" class="key key-op">−</button>
+
+        <button data-num="1" class="key">1</button>
+        <button data-num="2" class="key">2</button>
+        <button data-num="3" class="key">3</button>
+        <button data-op="add" class="key key-op">+</button>
+
+        <button data-action="backspace" class="key" aria-label="Apagar">⌫</button>
+        <button data-num="0" class="key key-zero">0</button>
+        <button data-action="decimal" class="key">,</button>
+        <button data-action="equals" class="key key-eq">=</button>
+      </div>
+    </div>
+    <footer class="tips">
+      <p>Atalhos: números, + - * /, Enter (=), Backspace (⌫), Esc (AC). Ponto ou vírgula para decimal.</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
